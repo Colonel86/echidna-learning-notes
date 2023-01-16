@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.4.26;
-import "token.sol";
+import "./token.sol";
 
 contract TestToken is Token {
     address echidna_caller = msg.sender;

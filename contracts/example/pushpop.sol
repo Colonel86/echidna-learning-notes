@@ -1,3 +1,5 @@
+pragma solidity ^0.8.4;
+
 contract C {
     address[] addrs;
 
@@ -10,7 +12,8 @@ contract C {
     }
 
     function clear() public {
-        addrs.length = 0;
+        // addrs.length = 0;
+        delete addrs;
     }
 
     function check() public {

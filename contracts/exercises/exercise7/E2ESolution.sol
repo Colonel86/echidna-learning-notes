@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-import "./side-entrance/SideEntranceLenderPool.sol";
+import "./SideEntranceLenderPool.sol";
 
-contract E2E is IFlashLoanEtherReceiver {
+contract E2ESolution is IFlashLoanEtherReceiver {
     SideEntranceLenderPool pool;
     address ADDRESS_POOL = 0x1dC4c1cEFEF38a777b15aA20260a54E584b16C48;
 
@@ -25,8 +25,8 @@ contract E2E is IFlashLoanEtherReceiver {
     }
 
     function setEnableDeposit(bool _enabled, uint256 _amount) public {
-        enableDeposit = _enabled;
-        depositAmount = _amount;
+        enableDeposit = _enabled; //true
+        depositAmount = _amount;  //208
     }
 
     function execute() external payable override {

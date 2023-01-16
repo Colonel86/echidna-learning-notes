@@ -1,4 +1,4 @@
-import "token.sol";
+import "./token.sol";
 
 contract TestToken is Token {
     constructor() public {
